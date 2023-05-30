@@ -1,8 +1,6 @@
-from selenium import webdriver
+import unittest
+from test_login import TestLogin
 
-driver = webdriver.Chrome()
 
-title = driver.title
-
-driver.get("http://the-internet.herokuapp.com/login")
-driver.implicitly_wait(5.5)
+if __name__ == "__main__":
+    unittest.main()
