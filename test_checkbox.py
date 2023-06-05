@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class TestCheckbox(TestCase):
     WEBSITE = "http://the-internet.herokuapp.com/checkboxes"
 
-    # funkcja sprawdza czy można zaznyczycz pola checkbox (domyślnie odznaczone)
+    # funkcja sprawdza czy można zaznaczyć pola checkbox (domyślnie odznaczone)
     def test_first_checkbox(self):
         try:
             self.driver.get(self.WEBSITE)
@@ -13,13 +13,13 @@ class TestCheckbox(TestCase):
         except Exception:
             self.fail("Fail to find/select first chceckbox")
 
-        # sprawdza czy zoastał zaznaczony checkbox
+        # sprawdza czy został zaznaczony checkbox
         if first_checkbox.is_selected():
             print("Pass select first checkbox")
         else:
             print("Fail")
 
-    # funkcja sprawdza czy można zaznyczycz pola checkbox (domyślnie znaczone)
+    # funkcja sprawdza czy można zaznaczyć pola checkbox (domyślnie zaznaczone)
     def test_second_checkbox(self):
         try:
             self.driver.get(self.WEBSITE)

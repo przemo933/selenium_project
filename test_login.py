@@ -59,7 +59,7 @@ class TestLogin(TestCase):
             self.fail("Button not found!")
         login_button.click()
 
-        # sprawdza czy pojawił sie prawidłowy komunkiat po zalogowaniu niepoprawnymi danymi
+        # sprawdza czy pojawił sie prawidłowy komunikat po zalogowaniu niepoprawnymi danymi
         self.driver.find_element(By.CSS_SELECTOR, "html.no-js body div.row div#flash-messages.large-12.columns div#"
                                                   "flash.flash.error")
 

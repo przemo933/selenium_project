@@ -49,7 +49,7 @@ class TestLoginStore(TestCase):
         except Exception:
             self.fail("Login with valid login details failed!")
 
-        # sprawdza czy na stronie wyświetliła się wiadomośc o błędnym logowaniu
+        # sprawdza czy na stronie wyświetliła się wiadomość o błędnym logowaniu
         self.driver.find_element(By.CSS_SELECTOR,
                                  "html.html-login-page body div.master-wrapper-page div.master-wrapper-"
                                  "content div.master-column-wrapper div.center-1 div.page.login-page div"
